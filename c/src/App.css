@@ -1,0 +1,131 @@
+.App {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.post {
+  width: 100%;
+  height: 300px;
+  min-height: 300px;
+  max-width: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: 1px solid lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.post:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.post .title {
+  flex: 20%;
+  border-bottom: 1px solid lightgray;
+  background-color: dodgerblue;
+  display: grid;
+  place-content: center;
+  color: white;
+}
+
+.post .body {
+  flex: 60%;
+  display: grid;
+  place-content: center;
+}
+
+.post .footer {
+  flex: 20%;
+  border-top: 1px solid rgb(223, 18, 18);
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background-color: dodgerblue;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btnDelete {
+  margin-top: 0;
+  width: auto;
+  height: auto;
+  background-color: rgb(126, 7, 7);
+  color: #fff;
+  font-weight: bold;
+}
+.btnDelete:hover{
+  background-color: red;
+}
+
+.like {
+  color: rgb(255, 123, 0);
+}
+.unlike {
+  color: rgb(38, 0, 255);
+}
+
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: dodgerblue;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar .links {
+  display: flex;
+  flex: 70%;
+  height: 100%;
+  align-items: center;
+}
+
+.navbar .loggedInContainer {
+  display: flex;
+  flex: 30%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 2rem;
+  background-color: white;
+}
+
+.footer .user {
+  display: flex;
+  flex: 70%;
+  height: 100%;
+  align-items: center;
+}
+
+.footer .actions {
+  display: flex;
+  flex: 30%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1rem;
+}
